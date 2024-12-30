@@ -69,3 +69,27 @@ function run(fx) {
 run(add);
 run(sub);
 
+/**
+ * 화살표 함수
+ */
+
+function fx(arg1, arg2) {
+    return "리턴";
+}
+
+fx(1, 2);
+
+const arrowFx = (arg1, arg2) => {
+    return "리턴";
+}
+arrowFx(3, 4);
+
+const arrowFx2 = arg1 => arg1 + 1;
+arrowFx2(10)
+
+function run(fx) {
+    fx();
+}
+
+run(() => console.log("test"))
+
