@@ -40,5 +40,25 @@ console.log(typeof address);
  */
 
 
+/* 
+ * var
+ * const
+ * console.log();
+ * => ===, !==
+ * null 병합 연산
+ * anything1 ?? anything2
+ * 좌항(anything1) === null || 좌항(anything1) === undefined => 우항(anything2)
+ * 좌항(anything1) !== null && 좌항(anything1) !== undefined => 좌항(anything1)
+ * JSON.stringify
+ * .slice
+ * .splice
+ * .indexOf
+ * .lastIndexOf
+ * .push
+ * .pop
+ * return
+ */
+
+
 
 

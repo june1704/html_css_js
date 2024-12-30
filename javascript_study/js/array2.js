@@ -23,7 +23,7 @@ const userComponents = users.map(user =>
         <label>비밀번호</label>
         <div>${user.password}</div>
     `
-).join("");
+).join(""); // 구분자 없이 결합
 console.log(userComponents);
 
 const users2 = users.filter(user => user.username !== "bbb");
@@ -51,7 +51,6 @@ console.log(`${nums} ===> ${nums2}`)
 
 /**
  * [1, 2, 3, 4, 5] => [2, 4, 6, 8, 10]
- * 
  */
 
 

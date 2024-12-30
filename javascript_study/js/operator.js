@@ -60,7 +60,7 @@ console.log(!"");   // 값이 비어 있거나 비어있는 문자열은 false
 console.log(!0);
 console.log(!null);
 console.log(!undefined);
-console.log(![]);   // 배열은 내부에 값이 없더라도 배열의 주소는 존재하기 때문에 true
+console.log(![]);   // 배열은 내부에 값이 없더라도 배열의 주소는 존재하기 때문에 true, ![]는 false
 console.log(typeof []);
 console.log(![].length);
 
