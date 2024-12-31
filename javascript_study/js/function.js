@@ -22,7 +22,8 @@ function fx3() {
 
 console.log(fx3());
 
-// 함수 안에 함수 정의
+// 함수 안에 함수 정의 o
+// 밖은 function 안은 => 함수
 function fx4() {
     console.log("fx4 호출");
 
@@ -33,6 +34,7 @@ function fx4() {
     fx5();
 }
 // 함수에 변수가 들어갈 수 있다.
+// 함수에 주소값이 들어간다
 const fx6 = fx4; 
 fx6();
 

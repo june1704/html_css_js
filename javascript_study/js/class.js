@@ -4,7 +4,7 @@ class User {
     name;
     email;
 
-    // 순서는 맞춰야 함
+    // 순서는 맞춰야 함, constructor: 생성자
     constructor(username = null, password = null, name = null, email = null) {
         this.username = username;
         this.password = password;

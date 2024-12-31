@@ -23,21 +23,21 @@ const userComponents = users.map(user =>
         <label>비밀번호</label>
         <div>${user.password}</div>
     `
-).join(""); // 구분자 없이 결합
+).join(""); // 구분자 없이 결합(하나의 문자열로 합치기)
 console.log(userComponents);
 
-const users2 = users.filter(user => user.username !== "bbb");
+const users2 = users.filter(user => user.username !== "bbb"); // 조건이 참일 때만 옮겨라
 console.log(users2);
 
 const users3 = users.map(user => {
     if(user.username === "bbb") {
         return {
-            ...user,
-            username: "ddd",
+            ...user, // 다가져와서
+            username: "ddd", // 바꿔라
         };
     }
     return user;
-}).filter(user => user.username !== "ccc");
+}).filter(user => user.username !== "ccc"); // ccc를 제외하고
 console.log(users3)
 
 const nums = [1, 2, 3, 4, 5];

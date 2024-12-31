@@ -16,11 +16,12 @@ const obj2 = {
     print: () => console.log(`이름: ${obj.name}, 나이: ${obj.age}`), 
 }
 
-console.log(obj === obj2);
+console.log(obj === obj2); // false (주소가 달라서)
 console.log(JSON.stringify(obj) === JSON.stringify(obj2));
 console.log(typeof JSON.stringify(obj))
 
 /**
+ * JSON 
  * objext -> Json   JSON.stringify(object)
  * Json -> object   JSON.parse(json문자열)
  * User 객체 생성

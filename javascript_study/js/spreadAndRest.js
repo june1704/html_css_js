@@ -21,7 +21,7 @@ const nums = [ 1, 2, 3, 4, 5 ];
 const [ n1, n2, n3 ] = nums; // 변수명 틀려도 됨
 console.log(n1, n2, n3);
 
-const { data1: dd1, ...obj3 } = obj;
+const { data1: dd1, ...obj3 } = obj; // ...obj3: 남아있는 놈들
 console.log(obj3);
 
 const [ n4, n5, ...newNums ] = nums;

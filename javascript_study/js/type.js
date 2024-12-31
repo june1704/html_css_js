@@ -41,8 +41,7 @@ console.log(typeof address);
 
 
 /* 
- * var
- * const
+ * const, let
  * console.log();
  * => ===, !==
  * null 병합 연산
@@ -57,6 +56,7 @@ console.log(typeof address);
  * .push
  * .pop
  * return
+ * 14, 15장에 다 들어 있는 내용
  */
 
 
