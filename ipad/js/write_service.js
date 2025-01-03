@@ -6,37 +6,32 @@ let boardInputDatas = {
 };
 
 function setInputsEvent() {
-    const titleInput = document.querySelector(".main-article > input:nth-of-type(1)");
-    const contentInput = document.querySelector(".main-article > textarea");
-    const writerInput = document.querySelector(".main-article > input:nth-of-type(2)");
+    const titleInput = document.querySelector("main-article > input:nth-of-type(1)");
+    const contentInput = document.querySelector("main-article > textarea");
+    const writerInput = document.querySelector("main-article > input:nth-of-type(2)");
     titleInput.onkeyup = handleBoardInputOnChange;
     contentInput.onkeyup = handleBoardInputOnChange;
     writerInput.onkeyup = handleBoardInputOnChange;
 }
 
-function setButtonEvent() {
-    const submitButton = document.querySelector(".write-submit-button");
-    submitButton.onclick = handleSubmitOnClick;
-}
-
-function handleSubmitOnClick() {
-    saveBoard();
-    clear();
-}
-
 function handleBoardInputOnChange(e) {
     boardInputDatas = {
         ...boardInputDatas,
-        [e.target.name]: e.target.value,
+        [e.targer.name]: e.targer.value,
     };
 }
 
-function saveBoard() {
-    let boardDatas = !!localStorage.getItem("boardDatas") 
-        ? JSON.parse(localStorage.getItem("boardDatas"))
-        : [];
+function setButtonEvent() {
+    const submitButton = document.querySelector(".write-submit-button")
+    submitButton.onclick = handleSubmitOnClick;
+}
 
-    if(boardDatas.length > 0 ) {
+function saveBoard() {
+    let boardDatas = !!localStorage.getItem("boardDatas")
+    ? JSON.parse(localStorage.getItem("boardDatas"))
+    : [];
+
+    if(boardDatas.length > 0) {
         boardInputDatas.id = boardDatas[boardDatas.length - 1].id + 1;
     }
 
@@ -55,7 +50,7 @@ function clear() {
     const titleInput = document.querySelector(".main-article > input:nth-of-type(1)");
     const contentInput = document.querySelector(".main-article > textarea");
     const writerInput = document.querySelector(".main-article > input:nth-of-type(2)");
-    const inputs = [ titleInput, contentInput, writerInput ];
+    const inputs = [ titleInput, contentInput, writerInput ]
     inputs.forEach(input => input.value = "");
 
     boardInputDatas = {
@@ -63,7 +58,12 @@ function clear() {
         content: "",
         writer: "",
     };
-} 
+}
+
+function handleSubmitOnClick() {
+    saveBoard();
+    clear();
+}
 
 setInputsEvent();
 setButtonEvent();
