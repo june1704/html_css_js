@@ -87,8 +87,8 @@
 
 .container-window {
     display: flex;
-    flex-direction: column;
     box-sizing: border-box;
+    flex-direction: column;
 }
 .window-clock {
     display: flex;
@@ -98,20 +98,14 @@
     height: 100px;
 
     & >.window-left-clock {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-        height: 60px;
+        margin: 0px 20px 0px 0px;
+        width: 280px;
         color: #ffffff;
         font-size: 60px;
         font-weight: 400;
     }
 
     & >.window-right-clock {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 0;
         width: 100px;
         color: #ffffff;
