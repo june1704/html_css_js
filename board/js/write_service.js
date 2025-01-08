@@ -58,6 +58,7 @@ function clear() {
     const inputs = [ titleInput, contentInput, writerInput ];
     inputs.forEach(input => input.value = "");
 
+
     boardInputDatas = {
         title: "",
         content: "",

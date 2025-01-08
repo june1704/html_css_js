@@ -196,3 +196,12 @@
     }
 }
 
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > p {
+        justify-content: center;
+    }
+}
